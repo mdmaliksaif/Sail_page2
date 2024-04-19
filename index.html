@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sail</title>
+
+    <style>
+        input[type="search"]::-webkit-search-cancel-button {
+  display: none; 
+}
+    </style>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <link rel="stylesheet" href="Header/Header.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+     <!-- Latest compiled and minified CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    
+<!-- Here we'll load content from individual HTML files -->
+<div id="header"></div>
+<div id="middle"></div>
+<div id="navbar"></div>
+<div id="footer"></div>
+
+<!-- JavaScript to load content from HTML files -->
+<script>
+    $(document).ready(function(){
+    // Load header.html into the div with id "header"
+    $("#header").load("Header/header.html");
+    // Load navbar.html into the div with id "navbar"
+    $("#middle").load("Middle/HeroSection.html");
+    // Load middle.html into the div with id "middle"
+    $("#navbar").load("Navbar/Footerupper.html");
+    // Load footer.html into the div with id "footer"
+    $("#footer").load("Footer/footer.html");
+});
+</script>
+
+</body>
+</html>
